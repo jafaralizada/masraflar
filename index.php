@@ -375,3 +375,4 @@
       </section>
 
       <!--main content end-->
+<?php include "footer.php";?>
