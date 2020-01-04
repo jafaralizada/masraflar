@@ -1,3 +1,20 @@
+<?php
+ob_start();
+@session_start();
+include "connect.php";
+$askusers=$db->prepare("SELECT * FROM users WHERE users_name=:name");
+$askusers->execute(array(
+    'name' => $_SESSION['users_name']
+));
+$say=$askusers->rowCount();
+
+if ($say == 0) {
+    header("HTTP/1.1 301 Moved Permanently");
+    header("Location:login.php");
+}
+$checkusers = $askusers->fetch(PDO::FETCH_ASSOC);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
