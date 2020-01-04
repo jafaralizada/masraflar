@@ -35,7 +35,7 @@
 	  	<div class="container">
 	  	
 		      <form class="form-login" action="index.html">
-		        <h2 class="form-login-heading">sign in now</h2>
+		        <h2 class="form-login-heading">Giriş Yap</h2>
 		        <div class="login-wrap">
 		            <input type="text" class="form-control" placeholder="E-Posta adresi" autofocus>
 		            <br>
@@ -46,14 +46,14 @@
 		
 		                </span>
 		            </label>
-		            <button class="btn btn-theme btn-block" href="index.html" type="submit"><i class="fa fa-lock"></i> SIGN IN</button>
+		            <button class="btn btn-theme btn-block" href="index.html" type="submit"><i class="fa fa-lock"></i> Giriş Yap</button>
 		            <hr>
 		            
 
 		            <div class="registration">
-		                Don't have an account yet?<br/>
+		                Daha üye değilmisin?<br/>
 		                <a class="" href="#">
-		                    Create an account
+		                    Üye Ol
 		                </a>
 		            </div>
 		
