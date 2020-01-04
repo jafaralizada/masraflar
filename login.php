@@ -34,19 +34,19 @@
 	  <div id="login-page">
 	  	<div class="container">
 	  	
-		      <form class="form-login" action="index.html">
+		      <form class="form-login" action="operation.php" method="POST">
 		        <h2 class="form-login-heading">Giriş Yap</h2>
 		        <div class="login-wrap">
-		            <input type="text" class="form-control" placeholder="E-Posta adresi" autofocus>
+		            <input type="text" class="form-control" name="email" placeholder="E-Posta adresi" autofocus>
 		            <br>
-		            <input type="password" class="form-control" placeholder="Şifre">
+		            <input type="password" name="password" class="form-control" placeholder="Şifre">
 		            <label class="checkbox">
 		                <span class="pull-right">
 		                    <a data-toggle="modal" href="login.html#myModal"> Şifremi Unuttum?</a>
 		
 		                </span>
 		            </label>
-		            <button class="btn btn-theme btn-block" href="index.html" type="submit"><i class="fa fa-lock"></i> Giriş Yap</button>
+		            <button name="loggin" class="btn btn-theme btn-block"  type="submit"><i class="fa fa-lock"></i> Giriş Yap</button>
 		            <hr>
 		            
 
