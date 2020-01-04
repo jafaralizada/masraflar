@@ -11,19 +11,21 @@
               	  <h5 class="centered">Marcel Newman</h5>
               	  	
                   <li class="mt">
-                      <a class="active" href="index.html">
+                      <a class="active" href="index.php">
                           <i class="fa fa-dashboard"></i>
-                          <span>Dashboard</span>
+                          <span>Ana Sayfa</span>
                       </a>
                   </li>
 
                   <li class="sub-menu">
                       <a href="javascript:;" >
                           <i class="fa fa-desktop"></i>
-                          <span>UI Elements</span>
+                          <span>Planlar</span>
                       </a>
                       <ul class="sub">
-                          <li><a  href="general.html">General</a></li>
+                          <!--<li><a  href="general.html">General</a></li>-->
+                          <li><a  href="plans.php">Planlar</a></li>
+                          <li><a  href="plan_add.php">Plan Ekle</a></li>
                           <li><a  href="buttons.html">Buttons</a></li>
                           <li><a  href="panels.html">Panels</a></li>
                       </ul>

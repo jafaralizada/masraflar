@@ -37,9 +37,9 @@
 		      <form class="form-login" action="operation.php" method="POST">
 		        <h2 class="form-login-heading">Giriş Yap</h2>
 		        <div class="login-wrap">
-		            <input type="text" class="form-control" name="email" placeholder="E-Posta adresi" autofocus>
+		            <input type="text" class="form-control" name="users_name" placeholder="E-Posta adresi" autofocus>
 		            <br>
-		            <input type="password" name="password" class="form-control" placeholder="Şifre">
+		            <input type="password" name="users_password" class="form-control" placeholder="Şifre">
 		            <label class="checkbox">
 		                <span class="pull-right">
 		                    <a data-toggle="modal" href="login.html#myModal"> Şifremi Unuttum?</a>
@@ -58,7 +58,17 @@
 		            </div>
 		
 		        </div>
-		
+				<?php
+
+if ($_GET['durum'] == "no") {
+  echo "Kullanici Adi Bulunamadi";
+}elseif ($_GET['durum'] == "exit") {
+  echo "Başarıyla Çıkış Yaptınız";
+}elseif ($_GET['durum'] == "uyeoldun") {
+  echo "Başarıyla Üye Oldunuz. Lütfen giriş yapınız.";
+}
+
+?>
 		          <!-- Modal -->
 		          <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal" class="modal fade">
 		              <div class="modal-dialog">
