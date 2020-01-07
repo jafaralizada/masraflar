@@ -1,5 +1,5 @@
 <?php
-/*ob_start();
+ob_start();
 @session_start();
 include "connect.php";
 $askusers=$db->prepare("SELECT * FROM users WHERE users_name=:users_name");
@@ -13,7 +13,7 @@ if ($say == 0) {
     header("Location:login.php");
 }
 $checkusers = $askusers->fetch(PDO::FETCH_ASSOC);
-*/?>
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -204,7 +204,7 @@ $checkusers = $askusers->fetch(PDO::FETCH_ASSOC);
             </div>
             <div class="top-menu">
             	<ul class="nav pull-right top-menu">
-                    <li><a class="logout" href="login.html">Logout</a></li>
+                    <li><a class="logout" href="logout.php">Logout</a></li>
             	</ul>
             </div>
         </header>

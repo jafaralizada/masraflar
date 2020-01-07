@@ -38,42 +38,36 @@
 		      <form class="form-login" action="operation.php" method="POST">
 		        <h2 class="form-login-heading">Giriş Yap</h2>
 		        <div class="login-wrap">
-		            <input type="text" class="form-control" name="users_name" placeholder="Kullanici Adi" autofocus>
-		            <br>
+		            <input type="text" class="form-control" name="users_name" placeholder="Kullanici Adi" >
+                    <br>
+                <input type="email" class="form-control" name="users_mail" placeholder="E-Posta" >
+                <br>
 		            <input type="password" name="users_password" class="form-control" placeholder="Şifre">
 		            <label class="checkbox">
-		                <span class="pull-right">
-		                    <a data-toggle="modal" href="login.html#myModal"> Şifremi Unuttum?</a>
-		
-		                </span>
+		               
 		            </label>
-		            <button name="loggin" class="btn btn-theme btn-block"  type="submit"><i class="fa fa-lock"></i> Giriş Yap</button>
+		            <button name="reg" class="btn btn-theme btn-block"  type="submit"><i class="fa fa-lock"></i> Giriş Yap</button>
 		            <hr>
 		            
 
 		            <div class="registration">
 		                Daha üye değilmisin?<br/>
-		                <a class="" href="reg.php">
+		                <a class="" href="#">
 		                    Üye Ol
 		                </a>
 		            </div>
 		
 		        </div>
 				<?php
-
 if (!empty($_GET)) {
-
 if ($_GET['durum'] == "no") {
   echo "Kullanici Adi Bulunamadi";
 }elseif ($_GET['durum'] == "exit") {
   echo "Başarıyla Çıkış Yaptınız";
 }elseif ($_GET['durum'] == "uyeoldun") {
   echo "Başarıyla Üye Oldunuz. Lütfen giriş yapınız.";
-}elseif ($_GET['durum'] == "exit") {
-  echo "Başarıyla Çıkış Yaptınız";
 }}else {
-	echo "Lutfen giris yapiniz";
-
+    echo "Lutfen Kayit Olunuz";
 }
 
 ?>

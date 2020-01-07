@@ -28,14 +28,14 @@ if ($say>0) {
 }
 
 
-if(isset($_POST['kayitol'])){
-   $ekle = "INSERT INTO users (users_name,users_password,users_mail) VALUES ('".$_POST["name"]."','".md5($_POST['password'])."','".$_POST['mail']."')";
+if(isset($_POST['reg'])){
+   $ekle = "INSERT INTO users (users_name,users_password,users_mail) VALUES ('".$_POST["users_name"]."','".md5($_POST['users_password'])."','".$_POST['users_mail']."')";
  
     if ($db->query($ekle)){
-       header ("Location:../index.php?durum=uyeoldun");
+       header ("Location:login.php?durum=uyeoldun");
     }
     else{
-       header ("Location:index.php?durum=uyeolamadin");
+       header ("Location:login.php?durum=uyeolamadin");
     }
     }
  
