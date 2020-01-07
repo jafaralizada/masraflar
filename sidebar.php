@@ -8,8 +8,26 @@
               <ul class="sidebar-menu" id="nav-accordion">
               
               	  <p class="centered"><a href="profile.html"><img src="assets/img/ui-sam.jpg" class="img-circle" width="60"></a></p>
-              	  <h5 class="centered">Marcel Newman</h5>
-              	  	
+              
+      
+              
+                    <h5 class="centered"><?php echo $_SESSION['users_name'];?></h5>
+                    <h5 class="centered">  
+                    <?php 
+
+
+                $askusers=$db->prepare("SELECT users_namesurname FROM users WHERE users_name=:users_name");
+                $askusers->execute(array(
+                'users_name' => $_SESSION['users_name']
+                ));
+
+                
+                foreach ($askusers as $row)
+                {
+                    echo "Hoş Geldin:  ".$row['users_namesurname'] ;
+                }
+                ?></h5>
+                    
                   <li class="mt">
                       <a class="active" href="index.php">
                           <i class="fa fa-dashboard"></i>
