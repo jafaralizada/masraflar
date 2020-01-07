@@ -29,7 +29,7 @@ if ($say>0) {
 
 
 if(isset($_POST['reg'])){
-   $ekle = "INSERT INTO users (users_name,users_password,users_mail) VALUES ('".$_POST["users_name"]."','".md5($_POST['users_password'])."','".$_POST['users_mail']."')";
+   $ekle = "INSERT INTO users (users_name,users_password,users_mail,users_namesurname) VALUES ('".$_POST["users_name"]."','".md5($_POST['users_password'])."','".$_POST['users_namesurname']."','".$_POST['users_namesurname']."')";
  
     if ($db->query($ekle)){
        header ("Location:login.php?durum=uyeoldun");

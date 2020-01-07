@@ -38,11 +38,13 @@
 		      <form class="form-login" action="operation.php" method="POST">
 		        <h2 class="form-login-heading">Giriş Yap</h2>
 		        <div class="login-wrap">
-		            <input type="text" class="form-control" name="users_name" placeholder="Kullanici Adi" >
+		            <input type="text" class="form-control" name="users_name" placeholder="Kullanici Adi" required>
                     <br>
-                <input type="email" class="form-control" name="users_mail" placeholder="E-Posta" >
+                <input type="email" class="form-control" name="users_mail" placeholder="E-Posta" required>
                 <br>
-		            <input type="password" name="users_password" class="form-control" placeholder="Şifre">
+                <input type="text" class="form-control" name="users_namesurname" placeholder="Isim Ve Soyisim" required>
+                <br>
+		            <input type="password" name="users_password" class="form-control" placeholder="Şifre" required>
 		            <label class="checkbox">
 		               
 		            </label>
@@ -51,9 +53,9 @@
 		            
 
 		            <div class="registration">
-		                Daha üye değilmisin?<br/>
-		                <a class="" href="#">
-		                    Üye Ol
+		                Üyeliğiniz var mı?<br/>
+		                <a class="" href="login.php">
+		                    Giriş yap
 		                </a>
 		            </div>
 		

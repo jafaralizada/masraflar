@@ -38,9 +38,9 @@
 		      <form class="form-login" action="operation.php" method="POST">
 		        <h2 class="form-login-heading">Giriş Yap</h2>
 		        <div class="login-wrap">
-		            <input type="text" class="form-control" name="users_name" placeholder="Kullanici Adi" autofocus>
+		            <input type="text" class="form-control" name="users_name" placeholder="Kullanici Adi" required>
 		            <br>
-		            <input type="password" name="users_password" class="form-control" placeholder="Şifre">
+		            <input type="password" name="users_password" class="form-control" placeholder="Şifre" required>
 		            <label class="checkbox">
 		                <span class="pull-right">
 		                    <a data-toggle="modal" href="login.html#myModal"> Şifremi Unuttum?</a>

@@ -24,7 +24,7 @@ $checkusers = $askusers->fetch(PDO::FETCH_ASSOC);
     <meta name="author" content="Dashboard">
     <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
 
-    <title>DASHGUM - FREE Bootstrap Admin Template</title>
+    <title>Masraflarım - Ücretsiz Masraflarını hesapla</title>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
@@ -60,7 +60,7 @@ $checkusers = $askusers->fetch(PDO::FETCH_ASSOC);
                   <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
               </div>
             <!--logo start-->
-            <a href="index.html" class="logo"><b>DASHGUM FREE</b></a>
+            <a href="index.html" class="logo"><b>Masraflar</b></a>
             <!--logo end-->
             <div class="nav notify-row" id="top_menu">
                 <!--  notification start -->
@@ -204,7 +204,7 @@ $checkusers = $askusers->fetch(PDO::FETCH_ASSOC);
             </div>
             <div class="top-menu">
             	<ul class="nav pull-right top-menu">
-                    <li><a class="logout" href="logout.php">Logout</a></li>
+                    <li><a class="logout" href="logout.php">Çıkış Yap!</a></li>
             	</ul>
             </div>
         </header>
