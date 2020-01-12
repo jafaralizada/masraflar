@@ -69,7 +69,7 @@ else
 
                                             
                                      
-                                            <td> <a href="<?php echo "months.php?year=".$row['year'];?>" class="btn btn-info" title="işlem yap"><i class="fa fa-eye fa-1x"></i></a> </td>
+                                            <td> <a href="<?php echo "year.php?year=".$row['year'];?>" class="btn btn-info" title="işlem yap"><i class="fa fa-eye fa-1x"></i></a> </td>
                                                <?php }?>
                                         </tr>
 

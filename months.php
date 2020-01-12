@@ -23,60 +23,36 @@
                                             <th>Plan Kodu</th>
                                             <th>Plan Ismi</th>
                                            <!-- <th>Ürün Resmi</th>-->
-                                            <th>Plan Tarihi</th>
+                                          
                                             <th></th>
 
                                         </tr>
                                     </thead>
-                                    <?php      
- 
-   /*                   $query = $db->prepare("DELETE FROM urunler where 
-                      urunler_id = :id");
-                      $sonuc = $query->execute(array(
-                          'id'=> $_GET['urun_sil']
-                      ));
-                      if($sonuc)
-{
-    echo "<script type= 'text/javascript'>alert('Urun Basariyla Silindi!');</script>";
+                                    <?php  
 
-}
-else 
-{
-    echo "<script type= 'text/javascript'>alert('Urun Silinemedi!');</script>";
-    $db = null;
+$veriler=$db->prepare("SELECT * FROM month WHERE month_year=:year ORDER BY month_year DESC");
+$veriler->execute(array(
+    'year' => $_GET['year']
+));
 
-}*/
-                      
-                                      $veriler = $db->query("SELECT * FROM plans ORDER BY plan_id DESC")->fetchAll();
+$data=$veriler->fetchAll(PDO::FETCH_ASSOC);
+foreach ($data as $row) {
 
 
-                            
-                          
-
-                                      foreach ($veriler as $row)
-                                      {
-                                      
-
-                                          ?>
+?>
 
                                     <tbody>
                                         <tr>
-                                            <td><?php echo $row['plan_id']."<br />\n"; ?></td>
+                                            <td><?php echo $row['month_year']."<br />\n"; ?></td>
                                  
                                  
-                                                <td><?php echo $row['plan_name']."<br />\n"; ?></td>
+                                                <td><?php echo $row['month_name']."<br />\n"; ?></td>
                                             
                                             
                                    
 
-                                            
-                                           <!-- <td> <div class="overlay">
-
-<a class="preview" href="<?php /*echo $row['urunler_resim'] */?>"><img src="<?php/* echo $row['urunler_resim']*/?>" class="img-responsive" alt="" height="50" width="50"> </a>
-</div></td>-->
-                                 
-                                            <td><?php echo $row['plan_date']."<br />\n"; ?></td>
-                                            <td> <a href="<?php echo "siparis.php?siparis=".$row['plan_no'];?>" class="btn btn-info" title="işlem yap"><i class="fa fa-eye fa-1x"></i></a> </td>
+                                       
+                                            <td> <a href="<?php echo "operation.php?month=".$row['month_id'];?>" class="btn btn-info" title="işlem yap"><i class="fa fa-eye fa-1x"></i></a> </td>
                                                <?php }?>
                                         </tr>
 
