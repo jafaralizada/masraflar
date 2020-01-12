@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Anamakine: 127.0.0.1:3306
--- Üretim Zamanı: 04 Oca 2020, 21:08:39
+-- Üretim Zamanı: 12 Oca 2020, 21:39:23
 -- Sunucu sürümü: 5.7.26
 -- PHP Sürümü: 7.0.33
 
@@ -21,6 +21,38 @@ SET time_zone = "+00:00";
 --
 -- Veritabanı: `masraflar`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Tablo için tablo yapısı `month`
+--
+
+DROP TABLE IF EXISTS `month`;
+CREATE TABLE IF NOT EXISTS `month` (
+  `month_id` int(11) NOT NULL AUTO_INCREMENT,
+  `month_name` varchar(100) COLLATE utf8_bin DEFAULT NULL,
+  `month_year` varchar(11) COLLATE utf8_bin DEFAULT NULL,
+  PRIMARY KEY (`month_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+--
+-- Tablo döküm verisi `month`
+--
+
+INSERT INTO `month` (`month_id`, `month_name`, `month_year`) VALUES
+(1, 'Ocak', '2020'),
+(2, 'Şubat', '2020'),
+(3, 'Mart', '2020'),
+(4, 'Nısan', '2020'),
+(5, 'Mayıs', '2020'),
+(6, 'Hazıran', '2020'),
+(7, 'Temmuz', '2020'),
+(8, 'Agustos', '2020'),
+(9, 'Eylul', '2020'),
+(10, 'Ekım', '2020'),
+(11, 'Kasım', '2020'),
+(12, 'Aralık', '2020');
 
 -- --------------------------------------------------------
 
@@ -61,14 +93,33 @@ CREATE TABLE IF NOT EXISTS `users` (
   `users_status` varchar(50) COLLATE utf8_bin DEFAULT NULL,
   `users_date` date DEFAULT NULL,
   PRIMARY KEY (`users_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
 -- Tablo döküm verisi `users`
 --
 
 INSERT INTO `users` (`users_id`, `users_name`, `users_password`, `users_mail`, `users_namesurname`, `users_authority`, `users_status`, `users_date`) VALUES
-(1, 'Admin', '12345', 'asasas@gmail.com', 'jr aa', '5', '1', '2020-01-03');
+(1, 'admin', '827ccb0eea8a706c4c34a16891f84e7b', 'sdsddsd@gmail.com', 'ss dd', '5', '1', '2020-01-03'),
+
+
+-- --------------------------------------------------------
+
+--
+-- Tablo için tablo yapısı `years`
+--
+
+DROP TABLE IF EXISTS `years`;
+CREATE TABLE IF NOT EXISTS `years` (
+  `year` varchar(11) COLLATE utf8_bin NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+--
+-- Tablo döküm verisi `years`
+--
+
+INSERT INTO `years` (`year`) VALUES
+('2020');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
