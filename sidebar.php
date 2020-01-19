@@ -16,7 +16,7 @@
                     <?php 
 
 
-                $askusers=$db->prepare("SELECT users_namesurname FROM users WHERE users_name=:users_name");
+                $askusers=$db->prepare("SELECT users_namesurname,users_id FROM users WHERE users_name=:users_name");
                 $askusers->execute(array(
                 'users_name' => $_SESSION['users_name']
                 ));

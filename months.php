@@ -52,7 +52,7 @@ foreach ($data as $row) {
                                    
 
                                        
-                                            <td> <a href="<?php echo "operation.php?month=".$row['month_id'];?>" class="btn btn-info" title="işlem yap"><i class="fa fa-eye fa-1x"></i></a> </td>
+                                            <td> <a href="<?php echo "expense.php?month=".$row['month_id'];?>" class="btn btn-info" title="işlem yap"><i class="fa fa-eye fa-1x"></i></a> </td>
                                                <?php }?>
                                         </tr>
 

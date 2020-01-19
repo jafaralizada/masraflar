@@ -47,28 +47,15 @@ else
                       
                                       $veriler = $db->query("SELECT * FROM years ORDER BY year DESC")->fetchAll();
 
-
-                            
-                          
-
                                       foreach ($veriler as $row)
                                       {
                                       
-
                                           ?>
 
                                     <tbody>
                                         <tr>
                                             <td><?php echo $row['year']."<br />\n"; ?></td>
-                                 
-                                 
-                                                
-                                            
-                                            
-                                   
-
-                                            
-                                     
+                             
                                             <td> <a href="<?php echo "months.php?year=".$row['year'];?>" class="btn btn-info" title="işlem yap"><i class="fa fa-eye fa-1x"></i></a> </td>
                                                <?php }?>
                                         </tr>
