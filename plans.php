@@ -2,6 +2,20 @@
      <?php include "header.php"; ?>
      <?php include "sidebar.php";?>
   
+     <?php
+if (!empty($_GET)) {
+if ($_GET['durum'] == "sene_eklendi") {
+    echo "<script type= 'text/javascript'>alert('Sene Başarıyla eklendi.');</script>";
+}}else {
+    echo "Sene Eklenemedi";
+}
+
+?>
+
+
+
+
+
   <!--main content start-->
    <section id="main-content">
           <section class="wrapper site-min-height">
@@ -47,10 +61,12 @@ else
                       
                                       $veriler = $db->query("SELECT * FROM years ORDER BY year DESC")->fetchAll();
 
+
                                       foreach ($veriler as $row)
                                       {
                                       
-                                          ?>
+     
+     ?>
 
                                     <tbody>
                                         <tr>
@@ -60,8 +76,7 @@ else
                                                <?php }?>
                                         </tr>
 
-                                      
-                                    </tbody>
+                              </tbody>
                                 </table>
                             </div>
                         </div>

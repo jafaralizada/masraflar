@@ -15,6 +15,23 @@ if ($say == 0) {
 $checkusers = $askusers->fetch(PDO::FETCH_ASSOC);
 ?>
 
+<?php 
+
+
+$kullanici=$db->prepare("SELECT users_namesurname,users_id FROM users WHERE users_name=:users_name");
+$kullanici->execute(array(
+'users_name' => $_SESSION['users_name']
+));
+
+
+foreach ($kullanici as $kul)
+{
+/*    echo "Hoş Geldin:  ".$kul['users_namesurname'] ;*/
+}
+?>
+        
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
