@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Anamakine: 127.0.0.1:3306
--- Üretim Zamanı: 19 Oca 2020, 19:19:19
+-- Üretim Zamanı: 09 Şub 2020, 19:06:33
 -- Sunucu sürümü: 5.7.26
 -- PHP Sürümü: 7.0.33
 
@@ -119,8 +119,42 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`users_id`, `users_name`, `users_password`, `users_mail`, `users_namesurname`, `users_authority`, `users_status`, `users_date`) VALUES
-(1, 'admin', '827ccb0eea8a706c4c34a16891f84e7b', 'ssss@gmail.com', 'Cefer Elizade', '5', '1', '2020-01-03');
+(1, 'admin', '827ccb0eea8a706c4c34a16891f84e7b', 'ceferelizade@gmail.com', 'Cefer Elizade', '5', '1', '2020-01-03'),
+(2, '', 'd41d8cd98f00b204e9800998ecf8427e', '', NULL, NULL, NULL, NULL),
+(3, '', 'd41d8cd98f00b204e9800998ecf8427e', '', NULL, NULL, NULL, NULL),
+(4, 'sdsde', 'af15d5fdacd5fdfea300e88a8e253e82', 'dsdsdes', NULL, NULL, NULL, NULL),
+(5, 'sdsde', 'd41d8cd98f00b204e9800998ecf8427e', 'dsdsdes', NULL, NULL, NULL, NULL),
+(6, 'cefer', '827ccb0eea8a706c4c34a16891f84e7b', 'cefererer', NULL, NULL, NULL, NULL),
+(7, 'jraa', '827ccb0eea8a706c4c34a16891f84e7b', 'Jafar Alizada', 'Jafar Alizada', NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
 --
+-- Tablo için tablo yapısı `years`
+--
+
+DROP TABLE IF EXISTS `years`;
+CREATE TABLE IF NOT EXISTS `years` (
+  `year_id` int(255) NOT NULL AUTO_INCREMENT,
+  `year` varchar(11) COLLATE utf8_bin NOT NULL,
+  `year_user_id` int(150) NOT NULL,
+  PRIMARY KEY (`year_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+--
+-- Tablo döküm verisi `years`
+--
+
+INSERT INTO `years` (`year_id`, `year`, `year_user_id`) VALUES
+(1, '2020', 1),
+(12, '2021', 1),
+(11, '2022', 1),
+(10, '2222', 1),
+(9, '2022', 1),
+(6, '2021', 1),
+(8, '2021', 1);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
