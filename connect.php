@@ -5,7 +5,7 @@ try {
 } catch (PDOException $e) {
    echo $e->getMessage();
    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-   echo "Bağlantı başarılı"; 
+   echo "Bağlantı başarılıı"; 
 }
 catch(PDOException $e)
     {
