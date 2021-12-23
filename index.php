@@ -15,38 +15,47 @@
                   	<div class="row mtbox">
                   		<div class="col-md-2 col-sm-2 col-md-offset-1 box0">
 							<div class="box1">
-					  			<span class="li_heart"></span>
-					  			<h3>933</h3>
+					  			<span class="li_banknote"></span>
+					  			<h3>30</h3>
+					  			<h6>Günlük Limitiniz .</h6>
                   			</div>
-					  			<p>933 People liked your page the last 24hs. Whoohoo!</p>
+					  			<p>Günlük Limitiniz Belirlenmiştir!</p>
                   		</div>
                   		<div class="col-md-2 col-sm-2 box0">
                   			<div class="box1">
-					  			<span class="li_cloud"></span>
-					  			<h3>+48</h3>
+					  			<span class="li_banknote"></span>
+					  			<h3>-15</h3>
+					  			<h6>Harcadığınız Fazla Limit.</h6>
+
                   			</div>
-					  			<p>48 New files were added in your cloud storage.</p>
+					  			<p>Harcadığınız Fazla Limit.</p>
                   		</div>
                   		<div class="col-md-2 col-sm-2 box0">
                   			<div class="box1">
-					  			<span class="li_stack"></span>
+					  			<span class="li_banknote"></span>
 					  			<h3>23</h3>
+					  			<h6>Aylık Harcama.</h6>
+
                   			</div>
-					  			<p>You have 23 unread messages in your inbox.</p>
+					  			<p>Aylık Harcama.</p>
                   		</div>
                   		<div class="col-md-2 col-sm-2 box0">
                   			<div class="box1">
-					  			<span class="li_news"></span>
+					  			<span class="li_banknote"></span>
 					  			<h3>+10</h3>
+					  			<h6>Aylık Fazla Harcama.</h6>
+
                   			</div>
-					  			<p>More than 10 news were added in your reader.</p>
+					  			<p>Aylık Fazla Harcama.</p>
                   		</div>
                   		<div class="col-md-2 col-sm-2 box0">
                   			<div class="box1">
-					  			<span class="li_data"></span>
-					  			<h3>OK!</h3>
+					  			<span class="li_banknote"></span>
+					  			<h3>1550</h3>
+					  			<h6>Toplam Harcamalarınız.</h6>
+
                   			</div>
-					  			<p>Your server is working perfectly. Relax & enjoy.</p>
+					  			<p>Toplam Harcamalarınız.</p>
                   		</div>
                   	
                   	</div><!-- /row mt -->	
@@ -97,7 +106,7 @@
                       	</div>
                       	<div class="details">
                       		<p><muted>7 Saat Önce</muted><br/>
-                      		   <a href="#">Al</a> purchased a year subscription.<br/>
+                      		   <a href="#">Ali Osmanlı</a> 10 tl harcadı.<br/>
                       		</p>
                       	</div>
                       </div>

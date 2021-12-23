@@ -77,7 +77,7 @@ foreach ($kullanici as $kul)
                   <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
               </div>
             <!--logo start-->
-            <a href="index.html" class="logo"><b>Masraflar</b></a>
+            <a href="index.php" class="logo"><b>Masraflar</b></a>
             <!--logo end-->
             <div class="nav notify-row" id="top_menu">
                 <!--  notification start -->
