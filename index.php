@@ -65,9 +65,17 @@
 					<div class="row mt">
                      
 					</div><!-- /row -->	
-					
+
+      				<!-- BUTTON BLOCK -->
+      				<div class="showback">
+						<a  class="btn btn-default btn-lg btn-block" href="#">Gelir Ekle</a>
+						<a  class="btn btn-default btn-lg btn-block" href="#">Gelirleri Listele</a>
+						<a  class="btn btn-default btn-lg btn-block" href="#">Gider Ekle</a>
+						<a  class="btn btn-default btn-lg btn-block" href="#">Giderleri Listele</a>
+
+      				</div><!--/showback -->					
                   </div><!-- /col-lg-9 END SECTION MIDDLE -->
-									
+				  
                   
       <!-- **********************************************************************************************************************************************************
       RIGHT SIDEBAR CONTENT
