@@ -34,43 +34,31 @@ if ($_GET['durum'] == "sene_eklendi") {
                                 <table class="table table-striped table-bordered table-hover">
                                     <thead>
                                         <tr>
-                                            <th>Yil Seciniz</th>
-                                     
-                                            <th></th>
+                                            <th>ID</th>
+                                            <th>Aciklama</th>
+                                            <th>Tutar</th>
+                                            <th>Tarih</th>
+
+
 
                                         </tr>
                                     </thead>
-                                    <?php      
- 
-   /*                   $query = $db->prepare("DELETE FROM urunler where 
-                      urunler_id = :id");
-                      $sonuc = $query->execute(array(
-                          'id'=> $_GET['urun_sil']
-                      ));
-                      if($sonuc)
-{
-    echo "<script type= 'text/javascript'>alert('Urun Basariyla Silindi!');</script>";
-
-}
-else 
-{
-    echo "<script type= 'text/javascript'>alert('Urun Silinemedi!');</script>";
-    $db = null;
-
-}*/
-                      
-                                      $veriler = $db->query("SELECT * FROM income ORDER BY income_description DESC")->fetchAll();
-
-
-                                      foreach ($veriler as $row)
-                                      {
-                                      
-     
-     ?>
+                                                <?php     
+                                                        $veriler = $db->query("SELECT * FROM income ORDER BY income_description DESC")->fetchAll();
+                                                        foreach ($veriler as $row)
+                                                        { 
+                                                ?>
 
                                     <tbody>
                                         <tr>
+                                            <td><?php echo $row['income_id']."<br />\n"; ?></td>
                                             <td><?php echo $row['income_description']."<br />\n"; ?></td>
+                                            <td><b><?php echo $row['income_amount']."<br />\n"; ?></td></b>
+                                            <td><?php echo $row['income_date']."<br />\n"; ?></td>
+                                            <td><?php echo $row['income_user_id']."<br />\n"; ?></td>
+
+
+
                              
                                             <td> <a href="<?php echo "months.php?year=".$row['year'];?>" class="btn btn-info" title="işlem yap"><i class="fa fa-eye fa-1x"></i></a> </td>
                                                <?php }?>
@@ -81,6 +69,29 @@ else
                             </div>
                         </div>
                     </div>
+
+                                                <!-- BASLANGIC -->
+
+                                                <h5 class="centered">  
+                                                <?php 
+
+
+                                                $askusers=$db->prepare("SELECT users_namesurname,users_id FROM users WHERE users_name=:users_name");
+                                                $askusers->execute(array(
+                                                'users_name' => $_SESSION['users_name']
+                                                ));
+
+
+                                                foreach ($askusers as $row)
+                                                {
+                                                echo "Hoş Geldin:  ".$row['users_namesurname'] ;
+                                                echo " -- ID:  ".$row['users_id'] ;
+
+
+                                                }
+                                                ?></h5>
+                                                            <!-- BITIS -->
+
                      <!-- End  Kitchen Sink -->
                 </div>
                 
