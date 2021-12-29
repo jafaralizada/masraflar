@@ -70,8 +70,8 @@
       				<div class="showback">
 						<a  class="btn btn-default btn-lg btn-block" href="income_add.php">Gelir Ekle</a>
 						<a  class="btn btn-default btn-lg btn-block" href="income_list.php">Gelirleri Listele</a>
-						<a  class="btn btn-default btn-lg btn-block" href="#">Gider Ekle</a>
-						<a  class="btn btn-default btn-lg btn-block" href="#">Giderleri Listele</a>
+						<a  class="btn btn-default btn-lg btn-block" href="expense_add.php">Gider Ekle</a>
+						<a  class="btn btn-default btn-lg btn-block" href="expense_list.php">Giderleri Listele</a>
 
       				</div><!--/showback -->					
                   </div><!-- /col-lg-9 END SECTION MIDDLE -->
