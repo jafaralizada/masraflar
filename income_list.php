@@ -85,6 +85,28 @@ if ($_GET['durum'] == "sene_eklendi") {
 
 
 
+                    <?php     
+                                                       /* $veriler = $db->query("SELECT * FROM income WHERE $kullanici_id = income_user_id  ORDER BY income_user_id  DESC")->fetchAll();*/
+                                                       $Fiyat=$db->prepare("SELECT SUM(income_price) AS sayi FROM income");
+                                                       $Fiyat->execute();
+                                                      $FiyatYaz= $Fiyat->fetch(PDO::FETCH_ASSOC);
+                                                      echo "Toplam Gelir: ".$FiyatYaz['sayi']." TL";
+                                                    
+
+
+                                                      $Price_Expense=$db->prepare("SELECT SUM(expense_price) AS sayi_expense FROM expense");
+                                                      $Price_Expense->execute();
+                                                     $FiyatYazGider= $Price_Expense->fetch(PDO::FETCH_ASSOC);
+                                                     echo "     Toplam Gider: ".$FiyatYazGider['sayi_expense']." TL";
+
+                                                     $a = $FiyatYazGider['sayi_expense'];
+                                                     $b = $FiyatYaz['sayi'];
+                                                     $c =  $b-$a;
+                                                     echo "     Kalan Paraniz: ".$c." TL";
+
+                                                     
+                                                      ?>
+                                                
                      <!-- End  Kitchen Sink -->
                 </div>
                 
