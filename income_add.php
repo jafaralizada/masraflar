@@ -27,7 +27,7 @@
                                  <div class="form-group">
                                             <label>Gelir Miktarı</label>
 
-                                            <input class="form-control" name="income_amount" type="number" required>
+                                            <input class="form-control" name="income_price" type="number" required>
                                      <p class="help-block">Gelir Miktarı ekleyin.</p>
                                         </div>
 
@@ -54,8 +54,8 @@
 
                             $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
 
-                            $sql = "INSERT INTO income (income_description, income_amount, income_user_id, income_date)
-                            VALUES ('".$_POST["income_description"]."','".$_POST["income_amount"]."',$kullanici_id,'".$_POST["income_date"]."')";
+                            $sql = "INSERT INTO income (income_description, income_price, income_user_id, income_date)
+                            VALUES ('".$_POST["income_description"]."','".$_POST["income_price"]."',$kullanici_id,'".$_POST["income_date"]."')";
 
                             if ($db->query($sql)) {
                                 echo "<script type= 'text/javascript'>alert('Geliriniz Başarıyla Eklendi!');</script>";

@@ -70,7 +70,7 @@ if ($_GET['durum'] == "sene_eklendi") {
                                             
                                                         <td><?php echo $row['income_id']."<br />\n"; ?></td>
                                                         <td><?php echo $row['income_description']."<br />\n"; ?></td>
-                                                        <td><b><?php echo $row['income_amount']."<br />\n"; ?></td></b>
+                                                        <td><b><?php echo $row['income_price']."<br />\n"; ?></td></b>
                                                         <td><?php echo $row['income_date']."<br />\n"; ?></td>
 
                                                        <!-- <td> <a href="<?php /*echo "months.php?year=".$row['year'];*/?>" class="btn btn-info" title="işlem yap"><i class="fa fa-eye fa-1x"></i></a> </td>-->
